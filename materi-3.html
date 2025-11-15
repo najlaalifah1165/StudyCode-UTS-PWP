@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCode.com</title>
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        article {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        code {
+            background-color: #dcdbdb;
+            color: #000000;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+
+        table, th, td {
+            border-collapse: collapse;
+            border: 2px solid rgb(154, 158, 167);
+            padding: 5px;
+            margin: 20px auto;
+            background-color: rgb(235, 235, 231);
+            text-align: left;
+        }
+
+        th {
+            color: white;
+            background-color: rgb(1, 19, 64);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Explore. Learn. Upgrade Yourself.</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="materi.html">Materi HTML</a> |
+            <a href="heading.html" class="active">Membuat List</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+    <br>
+    <h1>Cara Membuat List di HTML</h1>
+    <br>
+    <article style="text-align: justify; line-height: 1.5; padding-left: 30px;">
+        <h2>1. Pengenalan List di HTML</h2>
+            <p>Pada saat kita ingin menampilkan serangkaian item — misalnya daftar belanja, menu, atau tugas — di dalam web, kita perlu menggunakan struktur yang memadai agar tampilannya rapi dan maknanya jelas. Meskipun kita bisa saja menulis satu-per-satu dengan paragraf atau teks biasa, HTML menyediakan elemen yang memang khusus untuk membuat daftar (list). Dengan menggunakan list yang benar, kita tidak hanya mendapatkan tampilan yang rapi, tapi juga struktur semantik yang jelas—yang membantu pembaca maupun mesin pencari memahami konten dengan lebih baik.</p>
+
+        <h2>2. Jenis-Jenis List di HTML</h2>
+            <p>Menurut PetaniKode, ada tiga jenis utama list yang bisa dibuat di HTML.</p>
+            <p>
+                <ol>
+                    <li><b>Ordered List</b> (list terurut) — ketika urutan item penting, misalnya langkah-langkah.</li>
+                    <li><b>Unordered List</b> (list tak terurut) — ketika hanya ingin menampilkan sejumlah item yang tidak memiliki urutan spesifik, misalnya daftar bahan.</li>
+                    <li><b>Description List</b> (list deskripsi) — ketika kita ingin menyajikan daftar istilah dan definisinya.</li>
+                </ol>
+            </p>
+
+        <h3>Ordered List</h3>
+            <p><i>Ordered list</i> dibuat dengan tag <code>&lt;ol&gt;</code>. Lalu di dalamnya diisi dengan item-item yang akan dimasukkan ke dalam list. Item dibuat dengan tag <code>&lt;li&gt;</code> <i>(list item).</i></p>
+            <p>Contoh:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Membuat Ordered List&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Buah Favoritku:&lt;/h1&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Jeruk&lt;/li&gt;
+        &lt;li&gt;Durian&lt;/li&gt;
+        &lt;li&gt;Pisang&lt;/li&gt;
+        &lt;li&gt;Pepaya&lt;/li&gt;
+        &lt;li&gt;Mangga&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            <p>Hasilnya:</p>
+            <p>
+                <img src="images/contoh-ol.png" alt="" width="735px">
+            </p>
+            <p>List di atas diurutkan berdasarkan angka dari <code>1</code>, <code>2</code>, <code>3</code>, sampai <code>5</code>.</p>
+            <p>Kita juga bisa mengubah tipe penomoran dengan atribut <code>type</code>, pada <code>&lt;ol&gt;</code>:</p>
+            <p>
+                <ul>
+                    <li><code>a</code> untuk alfabet <code>a</code>, <code>b</code>, <code>c</code>, dan seterusnya;</li>
+                    <li><code>A</code> untuk alfabet <code>A</code>, <code>B</code>, <code>C</code>, dan seterusnya;</li>
+                    <li><code>i</code> untuk angka romawi <code>i</code>, <code>ii</code>, <code>iii</code>, dan seterusnya;</li>
+                    <li><code>I</code> untuk angka romawi <code>II</code>, <code>II</code>, <code>III</code>, dan seterusnya;</li>
+                </ul>
+            </p>
+            <P>Contoh:</P>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Ordered List dengan Atribut Type&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;h3&gt;List dengan type alfabet&lt;/h3&gt;
+    &lt;ol type="a"&gt;
+        &lt;li&gt;Tutorial List di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Link di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Tabel di HTML&lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;h3&gt;List dengan type alfabet kapital (huruf besar)&lt;/h3&gt;
+    &lt;ol type="A"&gt;
+        &lt;li&gt;Tutorial List di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Link di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Tabel di HTML&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;h3&gt;List dengan type romawi&lt;/h3&gt;
+    &lt;ol type="i"&gt;
+        &lt;li&gt;Tutorial List di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Link di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Tabel di HTML&lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;h3&gt;List dengan type romawi kapital&lt;/h3&gt;
+    &lt;ol type="I"&gt;
+        &lt;li&gt;Tutorial List di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Link di HTML&lt;/li&gt;
+        &lt;li&gt;Tutorial Tabel di HTML&lt;/li&gt;
+    &lt;/ol&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            <p>Hasilnya:</p>
+            <p><img src="images/ol-type.png" alt="" width="735px"></p>
+
+        <h3>Unordered List</h3>
+        <p>Unordered list adalah list yang tak terurut yang menggunakan simbol-simbol pada item-nya. Unordered list dibuat dengan tag <code>&lt;ul&gt;</code> dan untuk item-nya dibuat juga dengan tag <code>&lt;li&gt;</code>.</p>
+        <p>Contoh:</p>
+        <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;ul&gt;
+    &lt;li&gt;Javascript&lt;/li&gt;
+    &lt;li&gt;PHP&lt;/li&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+    &lt;li&gt;Kotlin&lt;/li&gt;
+&lt;ul&gt;
+</pre>
+
+        <p>Hasilnya:</p>
+        <p><img src="images/contoh-ul.png" alt="" width="735px"></p>
+        <p>Secara default simbol yang digunakan oleh unordered list adalah lingkaran kecil (disc). Kita juga bisa menggantinya dengan atribut <code>type</code>.</p>
+        <p>Berikut ini nilai yang bisa diberikan untuk atribut <code>type:</code></p>
+        <p>
+            <ul>
+                <li><code>square</code> untuk simbol persegi;</li>
+                <li><code>disc</code> (default) untuk simbol lingkaran disc;</li>
+                <li><code>none</code> tidak memakai simbol;</li>
+                <li><code>circle</code> untuk simbol lingkaran;</li>
+            </ul>
+        </p>
+        <p>Contoh:</p>
+        <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Membuat Unordered List&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;h1&gt;Bahasa Pemrograman untuk dipelajari:&lt;/h1&gt;
+    &lt;ul type="square"&gt;
+        &lt;li&gt;Javascript&lt;/li&gt;
+        &lt;li&gt;PHP&lt;/li&gt;
+        &lt;li&gt;Java&lt;/li&gt;
+        &lt;li&gt;Python&lt;/li&gt;
+        &lt;li&gt;Kotlin&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h1&gt;Framework untuk dipelajari:&lt;/h1&gt;
+    &lt;ul type="circle"&gt;
+        &lt;li&gt;Vuejs&lt;/li&gt;
+        &lt;li&gt;Svelte&lt;/li&gt;
+        &lt;li&gt;Reactjs&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h1&gt;Tools untuk dipelajari:&lt;/h1&gt;
+    &lt;ul type="none"&gt;
+        &lt;li&gt;Gulp&lt;/li&gt;
+        &lt;li&gt;NPM&lt;/li&gt;
+        &lt;li&gt;Js Lint&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h1&gt;Pelajari juga:&lt;/h1&gt;
+    &lt;ul type="disc"&gt;
+        &lt;li&gt;JSON&lt;/li&gt;
+        &lt;li&gt;XML&lt;/li&gt;
+        &lt;li&gt;Markdown&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+        <p>Hasilnya:</p>
+        <p>
+            <img src="images/ul-type.png" alt="" width="735px">
+        </p>
+
+    <h3>Description List</h3>
+        <p>Description List adalah list yang berisi deskripsi atau penjelasan dari sesuatu.</p>
+        <p>Ada tiga tag yang digunakan untuk membuat description list:</p>
+        <p>
+            <ul>
+                <li><code>&lt;dl&gt;</code> (description list) tag untuk memulai description list;</li>
+                <li><code>&lt;dt&gt;</code> (description term) tag untuk membuat kata yang akan dideskripsikan;</li>
+                <li><code>&lt;dd&gt;</code> (description description) tag untuk membuat penjelasan dari kata.</li>
+            </ul>
+        </p>
+        <p>Contoh:</p>
+        <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;h1&gt;Daftar istilah:&lt;/h1&gt;
+&lt;dl&gt;
+    &lt;dt&gt;Kopi&lt;/dt&gt; 
+    &lt;dd&gt;Sebuah minuman berwarna hitam. Menurut pendapat lain kopi adalah air yang dimasak sampai gosong.&lt;/dd&gt;
+
+    &lt;dt&gt;Kopi Black Magic&lt;/dt&gt; 
+    &lt;dd&gt;Kopi hitam atau kopi tradisional yang dibuat dengan mantra-mantra.&lt;/dd&gt;
+
+    &lt;dt&gt;White Coffee&lt;/dt&gt; 
+    &lt;dd&gt;Kopi berwarna putih, kandungan kafeinnya sedikit.&lt;/dd&gt;
+
+    &lt;dt&gt;Kopi++&lt;/dt&gt; 
+    &lt;dd&gt;Kopi ini mampu meningkatkan imajinasi 99 kali lipat.&lt;/dd&gt;
+&lt;dl&gt;
+</pre>
+        <p>Hasilnya:</p>
+        <p><img src="images/contoh-dl.png" alt="" width="735px"></p>
+    </article>
+
+    <br>
+    <br>
+    <hr>
+    <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+
+</body>
+</html>

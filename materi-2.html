@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCode.com</title>
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        article {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        code {
+            background-color: #dcdbdb;
+            color: #000000;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+
+        table, th, td {
+            border-collapse: collapse;
+            border: 2px solid rgb(154, 158, 167);
+            padding: 5px;
+            margin: 20px auto;
+            background-color: rgb(235, 235, 231);
+            text-align: left;
+        }
+
+        th {
+            color: white;
+            background-color: rgb(1, 19, 64);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Explore. Learn. Upgrade Yourself.</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="materi.html">Materi HTML</a> |
+            <a href="heading.html" class="active">Membuat Heading</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+    <br>
+    <h1>Cara Membuat Heading di HTML</h1>
+    <br>
+    <article style="text-align: justify; line-height: 1.5; padding-left: 30px;">
+        <h2>1. Pengertian Heading</h2>
+            <p><mark><b>Heading</b></mark> adalah elemen HTML yang digunakan untuk menampilkan judul atau subjudul pada sebuah halaman web. Tag ini membantu pengguna memahami bagian-bagian penting dari isi halaman dan membuat struktur konten menjadi lebih jelas. Selain itu, heading juga membantu mesin pencari (seperti Google) mengenali bagian-bagian utama dari halaman, sehingga sangat berpengaruh terhadap SEO (Search Engine Optimization).</p>
+            <p>Setiap halaman HTML umumnya memiliki satu judul utama yang ditulis dengan tag <code>&lt;h1&gt;</code>, sedangkan bagian-bagian lain yang menjadi subjudul ditulis menggunakan tag <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, hingga <code>&lt;h6&gt;</code>. Dengan begitu, heading tidak hanya berfungsi sebagai penanda visual, tetapi juga sebagai struktur logis yang menggambarkan urutan isi sebuah halaman web.</p>
+        
+        <h2>2. Jenis-jenis Tag Heading</h2>
+            <p>Dalam HTML terdapat <b>enam jenis heading</b>, yaitu <code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code>.</p>
+            <p>Berikut contoh penggunaannya:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Ini Judul Level 1&lt;/h1&gt;
+    &lt;h2&gt;Ini Judul Level 2&lt;/h2&gt;
+    &lt;h3&gt;Ini Judul Level 3&lt;/h3&gt;
+    &lt;h4&gt;Ini Judul Level 4&lt;/h4&gt;
+    &lt;h5&gt;Ini Judul Level 5&lt;/h5&gt;
+    &lt;h6&gt;Ini Judul Level 6&lt;/h6&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            <p>Hasilnya:</p>
+            <p><img src="images/contoh-heding-html.png" alt="" width="735px" height="400px"></p>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Tag</th>
+                    <th>Fungsi</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;...&lt;/h1&gt;</td>
+                    <td>Judul Utama Halaman</td>
+                </tr>
+                <tr>
+                    <td>&lt;h2&gt;...&lt;/h2&gt;</td>
+                    <td>Subjudul Utama</td>
+                </tr>
+                <tr>
+                    <td>&lt;h3&gt;...&lt;/h3&gt;</td>
+                    <td>Sub-subjudul</td>
+                </tr>
+                <tr>
+                    <td>&lt;h4&gt;...&lt;/h4&gt;</td>
+                    <td>Bagian Lebih Rinci</td>
+                </tr>
+                <tr>
+                    <td>&lt;h5&gt;...&lt;/h5&gt;</td>
+                    <td>Subbagian Kecil</td>
+                </tr>
+                <tr>
+                    <td>&lt;h6&gt;...&lt;/h6&gt;</td>
+                    <td>Bagian Terkecil</td>
+                </tr>
+            </table>
+
+        <h2>3. Atribut untuk Heading</h2>
+            <p>Sama seperti elemen HTML lainnya, tag heading dapat memiliki atribut global, yaitu atribut yang bisa digunakan di berbagai elemen HTML untuk memberikan informasi tambahan atau pengaturan khusus.</p>
+            <p>Beberapa atribut yang sering digunakan pada heading antara lain:</p>
+            <p>
+                <ul>
+                    <li><code>&lt;id&gt;</code> — digunakan untuk memberi identitas unik pada suatu heading. Atribut ini sering digunakan untuk membuat tautan (anchor link) menuju bagian tertentu dari halaman. <br>
+                        Misalnya:
+                        <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;h2 id="pengertian"&gt;Pengertian Heading&lt;/h2&gt; </pre>
+                        <p>Dengan kode tersebut, pengguna bisa membuat tautan ke bagian ini dengan menuliskan <code>#pengertian</code> di URL.</p>
+                    </li>
+                    <li><code>&lt;class&gt;</code> — digunakan untuk mengelompokkan heading tertentu agar dapat diberikan gaya (style) yang sama menggunakan CSS. <br>
+                        Contohnya:
+                        <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;h1 class="judul-utama"&gt;Belajar HTML&lt;/h1&gt; </pre>
+                        <p>Nantinya class ini bisa digunakan dalam CSS untuk mengatur tampilan semua elemen yang memiliki class <code>#judul-utama</code>.</p>
+                    </li>
+                    <li><code>&lt;style&gt;</code> — digunakan untuk memberikan gaya secara langsung pada heading menggunakan CSS. <br>
+                        Misalnya:
+                        <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;h3 style="color: blue; text-transform: uppercase;"&gt;Contoh Heading&lt;/h3&gt; </pre>
+                        <p>Heading tersebut akan muncul dengan teks berwarna biru dan huruf kapital semua.</p>
+                    </li>
+                </ul>
+            </p>
+            <p>Selain atribut di atas, heading juga bisa menggunakan atribut global lain seperti <code>&lt;title&gt;</code>, <code>&lt;lang&gt;</code>, atau <code>&lt;dir&gt;</code> untuk menambahkan informasi tambahan pada teks heading.</p>
+        
+        <h2>4. Mengatur Tampilan Heading</h2>
+            <p>Secara bawaan, browser sudah memberikan ukuran dan ketebalan font yang berbeda untuk tiap heading. Namun, tampilan heading bisa diubah agar lebih menarik dengan menggunakan CSS. Misalnya, kita bisa mengganti warna, jenis huruf, ukuran font, atau memberi latar belakang.
+                Contohnya:
+            </p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;h1 style="color: white; background-color: navy; padding: 10px;"&gt;
+    Belajar Tag Heading di HTML
+&lt;/h1&gt;
+</pre>
+            <p>Kode di atas akan menghasilkan heading berwarna putih dengan latar biru tua dan jarak di sekeliling teks (padding) sebesar 10 piksel. Selain itu, heading juga bisa digabungkan dengan elemen lain seperti <code>&lt;hr&gt;</code> untuk membuat garis pemisah di bawah judul agar tampilan lebih rapi.</p>
+        </article>
+
+        <br>
+        <br>
+        <hr>
+        <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+
+</body>
+</html>

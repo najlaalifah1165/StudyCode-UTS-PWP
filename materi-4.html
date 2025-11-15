@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCode.com</title>
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        article {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        code {
+            background-color: #dcdbdb;
+            color: #000000;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Explore. Learn. Upgrade Yourself.</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="materi.html">Materi HTML</a> |
+            <a href="heading.html" class="active">Membuat Tabel</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+    <br>
+    <h1>Cara Membuat Tabel di HTML</h1>
+    <br>
+    <article style="text-align: justify; line-height: 1.5; padding-left: 30px;">
+            <p>Salah satu cara atau format menampilkan informasi dalam web adalah dengan tabel. <br>
+            Tabel terdiri dari 4 unsur utama: <br>
+                <ol>
+                    <li>Baris</li>
+                    <li>Kolom</li>
+                    <li>Sel</li>
+                    <li>Garis</li>
+                </ol>
+            </p>
+            <p>
+                <img src="images/tabel.png" alt="" width="735px">
+            </p>
+        
+        <h2>1. Tag Untuk Membuat Tabel di HTML</h2>
+            <p>Ada beberapa tag yang harus diingat untuk membuat tabel di HTML: <br>
+                <ol>
+                    <li>Tag <code>&lt;table&gt;</code> untuk membungkus tabelnya</li>
+                    <li>Tag <code>&lt;thead&gt;</code> untuk membungkus bagian kepala tabel</li>
+                    <li>Tag <code>&lt;tbody&gt;</code> untuk membungkus bagian body dari tabel</li>
+                    <li>Tag <code>&lt;tr&gt;</code> (tabel row) untuk membuat baris</li>
+                    <li>Tag <code>&lt;td&gt;</code> (table data) untuk membuat sel</li>
+                    <li>Tag <code>&lt;th&gt;</code> (table head) untuk membuat judul pada header</li>
+                </ol>
+            </p>
+            <p>Tag yang paling penting untuk diingat adalah tag <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, dan <code>&lt;td&gt;</code>. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.</p>
+            <p>Mari kita lihat contohnya:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Belajar Membuat Tabel HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+            &lt;td&gt;Baris 1 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+            &lt;td&gt;Baris 2 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            <p>Hasilnya:</p>
+            <p>
+                <img src="images/tabel-garis.png" alt="" width="735px">
+            </p>
+            <p>Nilai <code>"1"</code> pada atribut <code>border</code> adalah ukuran garisnya. Semakin besar ukurannya, maka akan semakin besar pula ukuran garisnya.</p>
+            <p>Nilai <code>"1"</code> adalah ukuran garis yang paling kecil.</p>
+        
+        <h2>2. Mengatur Jarak Sel dengan Cellpadding</h2>
+            <p>Atribut <code>cellpadding</code> adalah atribut untuk mengatur jarak teks dengan garis di dalam sel.</p>
+            <p>Atribut ini dapat kita berikan kepada tag <code>&lt;table&gt;</code>.</p>
+            <p>Contoh:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+    &lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baris 1 kolom 1&lt;/td&gt;
+            &lt;td&gt;Baris 1 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+            &lt;td&gt;Baris 2 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+</pre>
+            <p>Nilai <code>"10"</code> pada atribut <code>cellpadding</code> adalah ukuran jarak antara teks sel dengan garis.</p>
+            <p>Maka Hasilnya:</p>
+            <p>
+                <img src="images/cellpadding.png" alt="" width="735px">
+            </p>
+    
+        <h2>3. Menambahkan Warna pada Sel dan Baris</h2>
+            <p>Untuk menambahkan warna pada sel dan baris, kita bisa menambahkan atribut <code>bgcolor</code> di dalam tag <code>&lt;td&gt;</code> (untuk sel) atau <code>&lt;tr&gt;</code> (untuk baris).</p>
+            <p>Contoh:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+    &lt;table border="1" cellpadding="10"&gt;
+        &lt;tr&gt;
+            &lt;td bgcolor="yellow"&gt;Baris 1 kolom 1&lt;/td&gt;
+            &lt;td&gt;Baris 1 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr bgcolor="#00ff80"&gt;
+            &lt;td&gt;Baris 2 kolom 1&lt;/td&gt;
+            &lt;td&gt;Baris 2 kolom 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    </pre>
+
+            <p>Nilai atribut <code>bgcolor</code> bisa kita isi dengan kode warna dalam heksadesimal atau nama warna dalam bahasa inggris.</p>
+            <p>Maka hasilnya akan seperti ini:</p>
+            <p>
+                <img src="images/warna-tabel.png" alt="" width="735px">
+            </p>
+        
+        <h2>4. Menggabungkan Sel Tabel</h2>
+            <p>Atribut yang digunakan untuk menggabungkan sel tabel adalah <code>rowspan</code> dan <code>colspan</code>:</p>
+            <p>
+                <ul>
+                    <li><code>rowspan</code> untuk menggabungkan baris.</li>
+                    <li><code>colspan</code> untuk menggabungkan kolom.</li>
+                </ul>
+            </p>
+            <p>Atribut ini bisa kita berikan kepada tag <code>&lt;td&gt;</code> atau <code>&lt;th&gt;</code>.</p>
+            <p>
+                <img src="images/rowspan-colspan.png" alt="" width="735px">
+            </p>
+            <p>Mari kita lihat contohnya:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Belajar Membuat Tabel HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th colspan="3" bgcolor="yellow"&gt;Produk Unggulan&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="4"&gt;
+            &lt;img src="https://www.petanikode.com/img/bibit.png" width="200"/&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Nama&lt;/td&gt;
+        &lt;td&gt;Benih Kode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Harga&lt;/td&gt;
+        &lt;td&gt;Rp 192.000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Fitur&lt;/td&gt;
+        &lt;td&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Dilengkapi Dokumentasi&lt;/li&gt;
+                &lt;li&gt;Ukuran: 31MB&lt;/li&gt;
+                &lt;li&gt;Masa Tanam: 6 Bulan&lt;/li&gt;
+                &lt;li&gt;Lisensi: MIT&lt;/li&gt;
+            &lt;ul&gt;
+        &lt;td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+            <p>Hasilnya:</p>
+            <p>
+                <img src="images/elemen-dalam-tabel.png" alt=""  width="735px">
+            </p>
+
+    <br>
+    <br>
+    <hr>
+    <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+    </article>
+</body>
+</html>

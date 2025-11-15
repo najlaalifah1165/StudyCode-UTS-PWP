@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCode.com</title>
+    
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }   
+    </style>
+
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Najla Alifah Fadhilla</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; 
+    justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html" class="active">Home</a> |
+            <a href="about.html" style="color: white; text-decoration: none;">About</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+    
+    <h1>Selamat Datang di StudyCode!</h1>
+
+    <article style="text-align: center; line-height: 1.5;">
+        <p>
+            <b style="background-color: yellow;">StudyCode</b> adalah <b style="background-color: yellow;">Platform Belajar Pemrograman</b> yang dirancang untuk membantu kamu memahami konsep dasar berbagai bahasa coding dengan cara yang mudah dan interaktif. Di sini, kamu bisa mulai dari HTML — fondasi utama dalam membangun sebuah website — sebelum menjelajahi bahasa lain seperti CSS, JavaScript, PHP, dan Python.
+            Dengan tampilan yang sederhana, materi yang terstruktur, dan latihan langsung, kamu akan belajar bukan hanya memahami teori, tapi juga menerapkannya dalam proyek nyata.
+        </p>
+    </article>
+
+    <h3>Apa yang ingin kamu pelajari?</h3>
+
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+
+        <div style="display: flex; align-items: center; background-color: #f5f5f5; padding: 15px; border-radius: 10px; width: fit-content;">
+            <img src="images/logo HTML.png" alt="Logo HTML" width="80px" height="80px" style="margin-right: 20px;">
+            <div>
+            <p style="font-size: 22px; font-weight: bold; margin: 0; color: rgb(1, 20, 69);">HTML</p>
+            <a href="materi.html" 
+                style="background-color: rgb(1, 20, 69);
+                        color: white;
+                        text-decoration: none;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 6px 12px;
+                        margin-top: 8px;
+                        display: inline-block;
+                        cursor: pointer;">
+                Pelajari Sekarang
+            </a>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; background-color: #f5f5f5; padding: 15px; border-radius: 10px; width: fit-content;">
+            <img src="images/logo CSS.png" alt="Logo CSS" width="80px" height="80px" style="margin-right: 20px;">
+            <div>
+            <p style="font-size: 22px; font-weight: bold; margin: 0; color: rgb(1, 20, 69);">CSS</p>
+            <button disabled>Segera</button>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; background-color: #f5f5f5; padding: 15px; border-radius: 10px; width: fit-content;">
+            <img src="images/logo PHP.svg" alt="Logo CSS" width="80px" height="80px" style="margin-right: 20px;">
+            <div>
+            <p style="font-size: 22px; font-weight: bold; margin: 0; color: rgb(1, 20, 69);">PHP</p>
+            <button disabled>Segera</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+
+        <div style="display: flex; align-items: center; background-color: #f5f5f5; padding: 15px; border-radius: 10px; width: fit-content;">
+            <img src="images/logo JS.png" alt="Logo HTML" width="80px" height="80px" style="margin-right: 20px;">
+            <div>
+            <p style="font-size: 22px; font-weight: bold; margin: 0; color: rgb(1, 20, 69);">JavaScript</p>
+            <button disabled>Segera</button>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; background-color: #f5f5f5; padding: 15px; border-radius: 10px; width: fit-content;">
+            <img src="images/ogo Python.png" alt="Logo CSS" width="80px" height="80px" style="margin-right: 20px;">
+            <div>
+            <p style="font-size: 22px; font-weight: bold; margin: 0; color: rgb(1, 20, 69);">Python</p>
+            <button disabled>Segera</button>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <hr>
+    <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+
+</body>
+</html>

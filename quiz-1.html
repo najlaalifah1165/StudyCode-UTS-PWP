@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML Dasar</title>
+
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        body {
+            background: #fafafa;
+        }
+
+        .progress {
+            width: 80%;
+            height: 10px;
+            background-color: #dcdcdc;
+            margin: 25px auto;
+            border-radius: 20px;
+        }
+
+        .progress-fill {
+            width: 25%; 
+            height: 100%;
+            background-color: #011445;
+            border-radius: 20px;
+        }
+
+        .container {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #011445;
+        }
+
+        code {
+            background-color: #eee8e8;
+            color: rgb(56, 53, 53);
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+
+        .option {
+            margin: 8px 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px; 
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #011445;
+            color: white;
+            padding: 8px 14px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Explore. Learn. Upgrade Yourself.</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="materi.html">Materi HTML</a> |
+            <a href="heading.html" class="active">Quiz 1</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+
+    <div class="progress">
+        <div class="progress-fill"></div>
+    </div>
+
+    <div class="container">
+        <p class="quiz-number" style="font-size: 14px; color: gray; margin-bottom: 10px;">Quiz 1 dari 4</p>
+        
+        <h2 style="font-size: 20px; color: #011445;">Pengenalan Dasar HTML</h2>
+
+            <p>1. Kepanjangan dari HTML adalah…</p>
+
+                <div class="option">
+                    <label><input type="radio" name="q1"> <i>Hyperlink Text Manage Language</i></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q1"> <i>Hyper Tool Markup Line</i></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q1"> <i>Hyper Text Markup Language</i></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q1"> <i>High Text Machine Language</i></label>
+                </div> <br>
+
+            <p>2. HTML digunakan untuk…</p>
+
+                <div class="option">
+                    <label><input type="radio" name="q2"> Mengatur tampilan warna dan gaya halaman</label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q2"> Mengatur logika program pada website</label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q2"> Membuat struktur dan isi halaman web</label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q2"> Mengelola data pada server</label>
+                </div> <br>
+
+            <p>3. Tag manakah yang digunakan untuk menampilkan teks paragraf?</p>
+
+                <div class="option">
+                    <label><input type="radio" name="q3"> <code>&lt;br&gt;</code></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q3"> <code>&lt;body&gt;</code></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q3"> <code>&lt;p&gt;</code></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q3"> <code>&lt;h1&gt;</code></label>
+                </div> <br>
+
+            <p>4. Penulisan deklarasi awal dokumen HTML yang benar adalah…</p>
+
+                <div class="option">
+                    <label><input type="radio" name="q4"> <code>&lt;!HTML&gt;</code></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q4"> <code>&lt;DOCTYPE html&gt;</code></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q4"> <code>&lt;!DOCTYPE html&gt;</code></label>
+                </div>
+                <div class="option">
+                    <label><input type="radio" name="q4"><code>&lt;html:doctype&gt;</code></label>
+                </div> <br>
+
+            <div class="question">
+                <p>5. Jelaskan secara singkat perbedaan fungsi dari tag <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, dan <code>&lt;body&gt;</code> dalam dokumen HTML!</p>
+                <textarea placeholder="Tulis jawaban Anda di sini..."></textarea>
+            </div>
+
+        <div class="button-area" style="text-align: right;">
+            <a href="materi.html" class="btn">Kirim</a>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+
+</body>
+</html>

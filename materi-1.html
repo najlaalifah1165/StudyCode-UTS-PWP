@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCode.com</title>
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        article {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        code {
+            background-color: #dcdbdb;
+            color: #000000;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+
+        table, th, td {
+            border-collapse: collapse;
+            border: 2px solid rgb(154, 158, 167);
+            padding: 5px;
+            margin: 20px auto;
+            background-color: rgb(235, 235, 231);
+            text-align: left;
+        }
+        
+        th {
+            color: white;
+            background-color: rgb(1, 19, 64);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Explore. Learn. Upgrade Yourself.</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="materi.html">Materi HTML</a> |
+            <a href="pengenalan-dasar.html" class="active">Pengenalan Dasar</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+    <br>
+    <h1>Pengenalan Dasar HTML untuk Pemula</h1>
+    <br>
+
+    <article style="text-align: justify; line-height: 1.5; padding-left: 30px;">
+        <h2>1. Pengertian HTML</h2>
+            <p>HTML adalah singkatan dari <mark><b><i>HyperText Markup Language</i></b></mark> , yaitu bahasa markah yang digunakan untuk membuat dan menyusun halaman web. Kata <b><i>HyperText</i></b> berarti teks yang memiliki tautan (link) ke halaman lain di internet.
+                Sedangkan <b><i>Markup Language</i></b> berarti bahasa yang menggunakan tanda atau simbol <i>(markup)</i> untuk memberi struktur pada sebuah dokumen. HTML bukan bahasa pemrograman, melainkan bahasa yang berfungsi untuk memberi struktur pada konten agar dapat ditampilkan di browser. </p>
+            <p>Dengan HTML, kita bisa menampilkan teks, gambar, tautan, tabel, video, dan berbagai elemen lain. Secara sederhana, HTML dapat diibaratkan sebagai pondasi atau kerangka sebuah rumah web. Ia menjadi dasar dari semua konten di internet, sementara CSS berperan untuk mempercantik tampilannya, dan JavaScript menambahkan interaktivitas agar situs terasa hidup.</p>
+    
+        <h2>2. Sejarah Singkat Perkembangan HTML</h2>
+            <p>HTML diciptakan oleh Tim Berners-Lee pada tahun 1989 di CERN, Swiss.
+                Tujuannya sederhana adalah untuk memudahkan para ilmuwan berbagi dokumen dan menghubungkannya satu sama lain menggunakan link.</p>
+            <p>Sejak saat itu, HTML berkembang melalui beberapa versi:</p>
+            <p>
+                <ul>
+                    <li>HTML 1.0 (1991) – versi awal, sangat sederhana.</li>
+                    <li>HTML 2.0 (1995) – mulai distandardisasi, menambah dukungan form dan tabel.</li>
+                    <li>HTML 3.2 (1997) – menambah tag untuk tampilan seperti warna dan font.</li>
+                    <li>HTML 4.01 (1999) – lebih rapi, mulai dipisahkan dari tampilan (mulai butuh CSS).</li>
+                    <li>XHTML (2000-an) – gabungan HTML dan XML, lebih ketat aturan penulisannya.</li>
+                    <li>HTML5 (2014-sekarang) – versi modern yang mendukung multimedia (video, audio), canvas untuk animasi, dan 
+                        elemen semantik seperti <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, dan <code>&lt;section&gt;</code>.</li>
+                </ul>
+            </p>
+        
+        <h2>3. Alat yang Dibutuhkan untuk Belajar HTML</h2>
+            <p>Untuk belajar HTML, tidak dibutuhkan alat yang rumit. Cukup dua hal saja:</p>
+            <p>
+                <ol>
+                    <li><b>Teks Editor</b></li>
+                    <p style="margin-top: 4px; margin-bottom: 4px;">Digunakan untuk menulis kode HTML. <br>
+                    Contohnya:</p>
+                    <ul style="list-style-type: disc;">
+                        <li>Notepad (Windows)</li>
+                        <li>Notepad++</li>
+                        <li>Visual Studio Code (direkomendasikan karena lengkap dan ringan)</li>
+                        <li>Sublime Text</li>
+                    </ul>
+                    <li><b>Web Browser</b></li>
+                    <p style="margin-top: 4px; margin-bottom: 4px;">Digunakan untuk melihat hasil tampilan HTML. <br>
+                    Contoh browser: Chrome, Edge, Firefox, Opera, dan Safari.</p>
+                </ol>
+            </p>
+            <p>Kamu cukup menulis kode HTML di teks editor, lalu menyimpannya dengan ekstensi <code>&lt;.html&gt;</code>, dan membukanya di browser untuk melihat hasilnya. HTML dapat dijalankan langsung oleh browser, jadi kamu tidak memerlukan koneksi internet atau software tambahan apa pun untuk mencobanya.</p>
+        
+        <h2>4. Struktur Dasar Dokumen HTML</h2>
+            <p>Setiap halaman HTML memiliki struktur utama seperti ini:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            <p><b>Penjelasan bagian-bagiannya:</b></p>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Bagian</th>
+                    <th>Fungsi</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                    <td>Memberi tahu browser bahwa dokumen ini menggunakan HTML5.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;html&gt;</code></td>
+                    <td>Elemen utama yang membungkus seluruh isi halaman.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;lang="en"&gt;</code></td>
+                    <td>Menandakan bahasa halaman (bisa diganti “id” untuk bahasa Indonesia).</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;head&gt;</code></td>
+                    <td>Bagian kepala, berisi informasi meta, judul halaman, dan tautan ke file lain (seperti CSS atau JavaScript).</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;title&gt;</code></td>
+                    <td>Judul halaman yang muncul di tab browser.</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;body&gt;</code></td>
+                    <td>Bagian tubuh, tempat semua konten yang terlihat oleh pengguna ditampilkan.</td>
+                </tr>
+            </table>
+
+        <h2>5. Tag dan Elemen Dasar HTML</h2>
+            <p style="margin-top: 4px; margin-bottom: 4px;">HTML tersusun dari tag yang dikelilingi tanda kurung sudut <code>&lt; &gt;</code>. <br>
+            Setiap tag biasanya memiliki <b>tag pembuka</b> dan <b>tag penutup</b>, misalnya:</p>
+            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;p&gt;Ini paragraf.&lt;/p&gt;
+</pre>
+
+            <p>Tag <code>&lt;p&gt;</code> adalah pembuka, dan <code>&lt;/p&gt;</code> adalah penutup.</p>
+            <p>Berikut contoh tag dasar yang sering digunakan:</p>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Tag</th>
+                    <th>Fungsi</th>
+                    <th>Contoh</th>
+                </tr>
+                <tr>
+                    <td><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></td>
+                    <td>Judul atau heading (dari besar ke kecil)</td>
+                    <td><code>&lt;h1&gt;Judul Utama&lt;/h1&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;p&gt;</code></td>
+                    <td>Paragraf</td>
+                    <td><code>&lt;p&gt;Ini teks paragraf.&lt;/p&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;a&gt;</code></td>
+                    <td>Tautan atau hyperlink</td>
+                    <td><code>&lt;a href="https://google.com"&gt;Kunjungi Google&lt;/a&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;img&gt;</code></td>
+                    <td>Menampilkan gambar</td>
+                    <td><code>&lt;img src="foto.jpg" alt="Foto profil"&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;ul&gt;</code> & <code>&lt;li&gt;</code></td>
+                    <td>Daftar tidak berurutan (bullet)</td>
+                    <td><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;li&gt;&lt;ul&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;ol&gt;</code> & <code>&lt;li&gt;</code></td>
+                    <td>Daftar berurutan (angka)</td>
+                    <td><code>&lt;ol&gt;&lt;li&gt;Langkah 1&lt;li&gt;&lt;ol&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;div&gt;</code></td>
+                    <td>Membagi area konten atau blok</td>
+                    <td><code>&lt;div&gt;Bagian konten&lt;/div&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code>&lt;br&gt;</code></td>
+                    <td>Ganti baris (tidak perlu penutup)</td>
+                    <td><code>Bagian pertama &lt;br&gt; Baris kedua</code></td>
+                </tr>
+            </table>
+
+        <h2>6. Cara Membuat File HTML Pertama</h2>
+            <p>
+                <ol>
+                    <li>Buka teks editor</li>
+                    <li>Ketik kode HTML seperti contoh berikut:</li>
+                    <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Website Pertamaku&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Selamat Datang di Website Saya!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah halaman pertama saya belajar HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+                    <li>Simpan dengan nama <code>index.html</code></li>
+                    <li>Buka file tersebut di browser. Kamu akan melihat tulisan “Selamat Datang di Website Saya!” di layar.</li>
+                </ol>
+            </p>
+
+        <h2>7. Tips Menulis Kode HTML yang Baik</h2>
+            <p>
+                <ul>
+                    <li>Gunakan indentasi (tab/spasi) agar kode lebih mudah dibaca.</li>
+                    <li>Pastikan setiap tag pembuka memiliki tag penutup yang sesuai.</li>
+                    <li>Gunakan nama file yang jelas dan tanpa spasi.</li>
+                    <li>Gunakan komentar untuk memberi catatan di dalam kode:</li>
+                    <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 16px; border-radius: 8px; font-family: Consolas, monospace;">
+&lt;!-- Ini komentar, tidak akan tampil di browser --&gt;
+</pre>
+                    <li>Simpan semua file (HTML, gambar, CSS) dalam satu folder agar mudah diatur.</li>
+                </ul>
+            </p>
+
+        <h2>8. Latihan</h2>
+            <p>Buat halaman web sederhana dengan ketentuan berikut:</p>
+            <p>
+                <ul>
+                    <li>Judul halaman: <b>Profil Saya</b></li>
+                    <li>Heading utama: “Selamat Datang di Website Saya”</li>
+                    <li>Tambahkan satu paragraf deskripsi tentang dirimu.</li>
+                    <li>Sisipkan gambar profil menggunakan tag &lt;img&gt;</li>
+                    <li>Tambahkan link ke media sosial favoritmu dengan tag &lt;a&gt;</li>
+                </ul>
+            </p>
+       </article>
+    
+    <br>
+    <br>
+    <hr>
+    <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+
+</body>
+</html>

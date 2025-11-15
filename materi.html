@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCode.com</title>
+    <style>
+        nav a {
+            color: white;
+            text-decoration: none; /* default link tanpa garis */
+            padding: 0 5px;
+        }
+        nav a.active {
+            text-decoration: underline; /* hanya link aktif yang ada garis bawah */
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(1, 19, 64);
+            background-color: rgb(235, 235, 231);
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        table, th, td {
+            text-align: center;
+            border-collapse: collapse;
+            border: 2px solid rgb(154, 158, 167);
+            padding: 5px;
+        }
+
+        th{
+            color: white;
+            background-color: rgb(1, 19, 64);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="tagline">
+            <p style="color: white; background-color: rgb(1, 20, 69); text-align: center; padding: 5px;">Explore. Learn. Upgrade Yourself.</p>
+        </div>
+        <div class="logo">
+            <img src="images/Header.png" alt="" width="100%">
+        </div>
+    </header>
+
+    <nav style="background-color: rgb(1, 20, 69); color: white; padding: 5px; padding-left: 30px; display: flex; justify-content: space-between; align-items: center;">
+         <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="materi.html" class="active">Materi HTML</a>
+        </div> 
+        <div class="social-container" style="display: flex; gap: 3px; padding-right: 25px; cursor: pointer;">
+            <a href="https://www.instagram.com/jaa.16.5?igsh=MTY4d2l0dXEzaGp1aA== "><img src="images/instagram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://youtube.com/@najlaalifah6492?si=zlWDQ_1r0cB_UUxe"><img src="images/youtube.png" alt="" width="30px" height="30px"></a>
+            <a href="https://wa.me/qr/6VHSGNMOKAIZE1 "><img src="images/whatsapp.png" alt="" width="30px" height="30px"></a>
+            <a href="https://github.com/najlaalifah1165"><img src="images/github.png" alt="" width="30px" height="30px"></a>
+        </div>
+    </nav>
+    
+    <h1>Tutorial HTML untuk Pemula</h1>
+    <br>
+
+    <table style="width: 100%;">
+        <tr>
+            <th>Materi</th>
+            <th>Quiz</th>
+            <th>Referensi</th>
+        </tr>
+        <tr>
+            <td><a href="materi-1.html">Pengenalan Dasar HTML untuk Pemula</a></td>
+            <td><a href="quiz-1.html">Quiz 1</a></td>
+            <td><a href="https://www.petanikode.com/html-dasar/" target="_blank">petanikode.com</a></td>
+        </tr>
+        <tr>
+            <td><a href="materi-2.html">Membuat Heading di HTML</a></td>
+            <td><a href="quiz-2.html">Quiz 2</a></td>
+            <td><a href="https://www.petanikode.com/html-heading/" target="_blank">petanikode.com</a></td>
+        </tr>
+        <tr>
+            <td><a href="materi-3.html">Membuat List di HTML</a></td>
+            <td><a href="quiz-3.html">Quiz 3</a></td>
+            <td><a href="https://www.petanikode.com/html-list/" target="_blank">petanikode.com</a></td>
+        </tr>
+        <tr>
+            <td><a href="materi-4.html">Membuat Tabel di HTML</a></td>
+            <td><a href="quiz-4.html">Quiz 4</a></td>
+            <td><a href="https://www.petanikode.com/html-tabel/" target="_blank">petanikode.com</a></td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <hr>
+    <footer style="text-align: center;">&copy 2025 StudyCode - Platform Belajar Pemrograman</footer>
+
+</body>
+</html>
